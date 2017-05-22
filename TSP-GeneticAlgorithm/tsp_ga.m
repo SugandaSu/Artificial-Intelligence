@@ -1,3 +1,4 @@
+function output = tsp_ga()
 %membuat graph
 s = [1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 5 5 5 5 5 6 6 6 6 7 7 7 8 8 9];
 d = [2 3 4 5 6 7 8 9 10 3 4 5 6 7 8 9 10 4 5 6 7 8 9 10 5 6 7 8 9 10 6 7 8 9 10 7 8 9 10 8 9 10 9 10 10];
@@ -13,4 +14,5 @@ config.mutasiProb = 0.3;
 config.jumlahTourn = 10;
 config.jumlahKeturunan = 5;
 
-Hasil = ga(config);
+output = ga(config);
+end
